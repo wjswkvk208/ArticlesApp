@@ -1,5 +1,6 @@
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import React from 'react';
+import useAuthLoadEffect from '../hooks/useAuthLoadEffect';
 import ArticleScreen from './ArticleScreen';
 import LoginScreen from './LoginScreen';
 import MainTab from './MainTab';
@@ -8,6 +9,7 @@ import RegisterScreen from './RegisterScreen';
 const Stack = createNativeStackNavigator();
 
 const RootStack = () => {
+  useAuthLoadEffect();
   return (
     <Stack.Navigator>
       <Stack.Screen

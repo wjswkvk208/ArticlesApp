@@ -24,7 +24,7 @@ const MainTab = () => {
         name="UserMenu"
         component={UserMenuScreen}
         options={{
-          title: '게시글 목록',
+          title: '사용자 메뉴',
           tabBarIcon: ({color, size}) => (
             <MaterialIcons name="person" color={color} size={size} />
           ),
